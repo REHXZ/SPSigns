@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 
-ffmpeg.setFfmpegPath('C:/Users/User/Downloads/a/a2/bin/ffmpeg.exe'); // Adjust the path as necessary for your installation
+ffmpeg.setFfmpegPath('C:/ffmpeg/bin/ffmpeg.exe'); // Adjust the path as necessary for your installation
 
 async function query(filename) {
   const data = fs.readFileSync(filename);
